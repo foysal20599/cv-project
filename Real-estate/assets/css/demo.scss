@@ -1,0 +1,126 @@
+@import "reset";
+@import "mxin";
+@import "variables";
+
+
+
+@mixin setColor($value) {
+    @if ($value == small) {
+        background-color: red;
+    }@else if($value == medium){
+        background-color: rebeccapurple;
+    }@else if($value == large){
+        background-color: rgb(195, 207, 22);
+    }
+    
+}
+
+.btn{
+    padding: 10px 15px;
+    font-size: 15px;
+   border: none;
+   text-align: center;
+   cursor: pointer;
+   border-radius: 5px;
+}
+
+.bownload{
+    @extend .btn;
+    // background-color: #de73ff;
+    @include setColor(large)
+}
+.bownload:hover{
+    background-color: rebeccapurple;
+}
+.learnmore{
+    @extend .btn;
+    background-color: #ee0b88;
+}
+#about p{
+    @include pera-style(20px, justify);
+    background-color: rgb(169, 166, 172)
+ }
+#education p{
+    @include pera-style(20px, justify);
+ }
+
+header{
+    background-color: $header-bgcolor;
+    color: $header-color;
+}
+
+
+
+nav{
+    margin-top: 15px;
+    ul{
+        list-style-type: none;
+    }
+    li{
+        display: inline-block;
+        margin-top: 10px 15px;
+    }
+    a{
+        text-decoration: none;
+        color: wheat;
+        padding: 10px;
+        transition: .4s;
+        border-radius: 5px;
+    }
+    a:hover{
+        background-color: black;
+    }
+}
+
+main{
+    background-color: #ffb;
+    color: $header-color;
+}
+main h2{
+    color:$main-header;
+    padding: 15px 0;
+}
+
+// grid 
+
+[class*="col-"]{
+    float: left;
+}
+@for $i from 1 through 12{
+    .col-#{$i} {width: 100% / 12 * $i}
+}
+
+// .col-1 {width: 8.33%;}
+// .col-2 {width: 16.66%;}
+// .col-3 {width: 25%;}
+// .col-4 {width: 33.33%;}
+// .col-5 {width: 41.66%;}
+// .col-6 {width: 50%;}
+// .col-7 {width: 58.33%;}
+// .col-8 {width: 66.66%;}
+// .col-9 {width: 75%;}
+// .col-10 {width: 83.33%;}
+// .col-11 {width: 91.66%;}
+// .col-12 {width: 100%;}
+
+.row::after{
+    clear: both;
+    content:  "";
+    display: table;
+}
+$color: green, red, purple, pink, yellow;
+
+@each $color in $color{
+   
+        .#{$color}-text {color: $color}
+  
+}
+@each $color in $color {
+    .#{$color}-color {background-color: $color;}
+}
+
+
+footer{
+    background-color: $footer-bgcolor;
+    color: $footer-color;
+}

@@ -1,0 +1,185 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.btn, .bownload, .learnmore {
+  padding: 10px 15px;
+  font-size: 15px;
+  border: none;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.bownload {
+  background-color: #c3cf16;
+}
+
+.bownload:hover {
+  background-color: rebeccapurple;
+}
+
+.learnmore {
+  background-color: #ee0b88;
+}
+
+#about p {
+  font-size: 20px;
+  text-align: justify;
+  margin: 20px 0;
+  background-color: #a9a6ac;
+}
+
+#education p {
+  font-size: 20px;
+  text-align: justify;
+  margin: 20px 0;
+}
+
+header {
+  background-color: #ffab73;
+  color: #666161;
+}
+
+nav {
+  margin-top: 15px;
+}
+
+nav ul {
+  list-style-type: none;
+}
+
+nav li {
+  display: inline-block;
+  margin-top: 10px 15px;
+}
+
+nav a {
+  text-decoration: none;
+  color: wheat;
+  padding: 10px;
+  -webkit-transition: .4s;
+  transition: .4s;
+  border-radius: 5px;
+}
+
+nav a:hover {
+  background-color: black;
+}
+
+main {
+  background-color: #ffb;
+  color: #666161;
+}
+
+main h2 {
+  color: #c90989;
+  padding: 15px 0;
+}
+
+[class*="col-"] {
+  float: left;
+}
+
+.col-1 {
+  width: 8.33333%;
+}
+
+.col-2 {
+  width: 16.66667%;
+}
+
+.col-3 {
+  width: 25%;
+}
+
+.col-4 {
+  width: 33.33333%;
+}
+
+.col-5 {
+  width: 41.66667%;
+}
+
+.col-6 {
+  width: 50%;
+}
+
+.col-7 {
+  width: 58.33333%;
+}
+
+.col-8 {
+  width: 66.66667%;
+}
+
+.col-9 {
+  width: 75%;
+}
+
+.col-10 {
+  width: 83.33333%;
+}
+
+.col-11 {
+  width: 91.66667%;
+}
+
+.col-12 {
+  width: 100%;
+}
+
+.row::after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+.green-text {
+  color: green;
+}
+
+.red-text {
+  color: red;
+}
+
+.purple-text {
+  color: purple;
+}
+
+.pink-text {
+  color: pink;
+}
+
+.yellow-text {
+  color: yellow;
+}
+
+.green-color {
+  background-color: green;
+}
+
+.red-color {
+  background-color: red;
+}
+
+.purple-color {
+  background-color: purple;
+}
+
+.pink-color {
+  background-color: pink;
+}
+
+.yellow-color {
+  background-color: yellow;
+}
+
+footer {
+  background-color: #53025e;
+  color: #d8d4d8;
+}
+/*# sourceMappingURL=demo.css.map */
